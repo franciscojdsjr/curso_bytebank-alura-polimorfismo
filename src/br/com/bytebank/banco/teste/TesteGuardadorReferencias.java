@@ -1,8 +1,8 @@
-public class TesteGuardador {
+public class TesteGuardadorReferencias {
 
     public static void main(String[] args) {
 
-        GuardadorDeContas guardador = new GuardadorDeContas();
+        GuardadorDeReferencias guardador = new GuardadorDeReferencias();
 
         Conta cc = new ContaCorrente(22, 11);
         guardador.adiciona(cc);
@@ -14,9 +14,8 @@ public class TesteGuardador {
 
         System.out.println(tamanho);
 
-        Conta ref = guardador.getReferencia(0);
+        Conta ref = (Conta) guardador.getReferencia(0);
         System.out.println(ref.getNumero());
 
     }
-
 }
