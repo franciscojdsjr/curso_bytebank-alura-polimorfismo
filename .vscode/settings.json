@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "src/br/com/bytebank/banco/teste",
+        "src/br/com/bytebank/banco/modelo"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "bytebank-alura-polimorfismo.jar"
+    ]
+}
