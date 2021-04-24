@@ -1,24 +1,33 @@
-public class GuardadorDeReferencias {
 
-    private Object[] referencias;
-    private int posicaoLivre;
+import java.util.Iterator;
 
-    public GuardadorDeReferencias() {
-        this.referencias = new Object[10];
-        this.posicaoLivre = 0;
-    }
+public class GuardadorDeReferencias implements Iterable {
 
-    public void adiciona(Object ref) {
-        this.referencias[this.posicaoLivre] = ref;
-        this.posicaoLivre++;
-    }
+	private Object[] referencias;
+	private int posicaoLivre;
 
-    public int getQuantidadeDeElementos() {
-        return this.posicaoLivre;
-    }
+	public GuardadorDeReferencias() {
+		this.referencias = new Object[10];
+		this.posicaoLivre = 0;
+	}
 
-    public Object getReferencia(int pos) {
+	public void adiciona(Object ref) {
+		this.referencias[this.posicaoLivre] = ref;
+		this.posicaoLivre++;
+	}
 
-        return this.referencias[pos];
-    }
+	public int getQuantidadeDeElementos() {
+		return this.posicaoLivre;
+	}
+
+	public Object getReferencia(int pos) {
+		return this.referencias[pos];
+	}
+
+	@Override
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

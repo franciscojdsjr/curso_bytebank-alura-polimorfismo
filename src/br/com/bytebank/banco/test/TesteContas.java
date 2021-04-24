@@ -3,13 +3,11 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.SaldoInsuficienteException;
 
-//br.com.bytebank.banco.teste.TesteContas
+//br.com.bytebank.banco.test.TesteContas 
 public class TesteContas {
 
 	// java.lang.String
 	public static void main(String[] args) throws SaldoInsuficienteException {
-		// int a = 3;
-		// int b = a / 0;
 
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
